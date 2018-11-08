@@ -9,4 +9,4 @@ This module allows you to write to a local chat and add commands /me, /try
 
 Found bug or want to suggest an innovation, write to me ;)
 
-[Post on jc-mp.com](https://www.jc-mp.com/forums/index.php/topic,6231.0.html)
+[Post on forum jc-mp.com](https://www.jc-mp.com/forums/index.php/topic,6231.0.html)
