@@ -2,7 +2,7 @@
 
 This module allows you to write to a local chat and adds /me, /try commands.
 
-**How to use:**
-* Type /l <text> - Local Chat.
-* Type /me <text> - Express Emotions/Action.
-* Type /try <text> - Solution to disputable situations.
+### Chat commands:
+* `/l <message>` - Send message to local chat
+* `/me <message>` - Send action message
+* `/try <message>` - Send action message with solution to disputable situations
