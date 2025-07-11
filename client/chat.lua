@@ -2,33 +2,36 @@
 --By Hallkezz--
 ---------------
 
+-----------------------------------------------------------------------------------
+--Script
 class 'ChatSystem'
 
 function ChatSystem:__init()
-	Events:Subscribe( "ModulesLoad", self, self.ModulesLoad )
-	Events:Subscribe( "ModuleUnload", self, self.ModuleUnload )
+    Events:Subscribe("ModulesLoad", self, self.ModulesLoad)
+    Events:Subscribe("ModuleUnload", self, self.ModuleUnload)
 end
 
 function ChatSystem:ModulesLoad()
-	Events:Fire( "HelpAddItem",
+	Events:Fire("HelpAddItem",
 		{
 			name = "Chat",
 			text = 
-				"Type /l <text> - It's Local Chat.\n" ..
-				"Type /me <text> - It's express Emotions/Action.\n" ..
-				"Type /try <text> - It's solution to disputable situations.\n" ..
-				"\n::By Hallkezz!"
-		} )
+				"/l <text> - send message to local chat\n" ..
+				"/me <text> - send action message\n" ..
+				"/try <text> - send action message with solution to disputable situations\n" ..
+				"\n- Created by Hallkezz"
+		})
 end
 
 function ChatSystem:ModuleUnload()
-	Events:Fire( "HelpRemoveItem",
-		{
-			name = "Chat"
-		} )
+    Events:Fire("HelpRemoveItem", {name = "Chat"})
 end
 
-chatsystem = ChatSystem()
+local chatsystem = ChatSystem()
+-----------------------------------------------------------------------------------
+--Script Version
+--v1.0--
 
---v0.1--
---08.11.18--
+--Release Date
+--12.07.25--
+-----------------------------------------------------------------------------------
